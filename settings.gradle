@@ -25,7 +25,7 @@ include ':lib-analytics-manager'
 include ':lib-lifecycle-loggr'
 
 include ':test-debug'
-include ':test-debug:no-op'
+include ':test-debug-no-op'
 
 include ':core-loggr'
 include ':core-analytics'
