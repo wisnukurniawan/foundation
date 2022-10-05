@@ -2,7 +2,9 @@
 androidGradlePlugin = "7.2.2"
 
 androidDesugarJdkLibs = "1.1.6"
+androidxCore = "1.8.0"
 androidxFragment = "1.5.0"
+androidxLifecycle = "2.6.0-alpha02"
 firebase = "30.5.0"
 kotlin = "1.7.10"
 kotlinxCoroutines = "1.6.4"
@@ -16,7 +18,9 @@ google-firebase-crashlytics-gradlePlugin = { group = "com.google.firebase", name
 jetbrains-kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
 android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
 androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidxFragment" }
+androidx-lifecycle-runtimeCompose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
 google-firebase = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase" }
 jetbrains-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
 squareup-moshi-moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }

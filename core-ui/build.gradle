@@ -1,0 +1,5 @@
+apply from: "$rootDir/gradle/lib-android-module.gradle"
+
+dependencies {
+    implementation libs.androidx.core.ktx
+}
