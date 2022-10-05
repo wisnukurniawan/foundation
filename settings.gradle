@@ -22,3 +22,5 @@ enableFeaturePreview("VERSION_CATALOGS")
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include ':core-loggr'
 include ':lib-lifecycle-loggr'
+include ':test-debug'
+include ':test-debug:no-op'
