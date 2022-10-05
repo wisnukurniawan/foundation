@@ -1,0 +1,7 @@
+apply from: "$rootDir/gradle/lib-android-module.gradle"
+
+dependencies {
+    implementation libs.androidx.lifecycle.viewmodel
+    implementation libs.jetbrains.coroutines.android
+    implementation libs.androidx.lifecycle.runtimeCompose
+}
