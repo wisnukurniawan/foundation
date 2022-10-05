@@ -1,0 +1,13 @@
+apply from: "$rootDir/gradle/lib-android-module.gradle"
+
+android {
+    compileOptions {
+        coreLibraryDesugaringEnabled = true
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    coreLibraryDesugaring(libs.android.desugarJdkLibs)
+}

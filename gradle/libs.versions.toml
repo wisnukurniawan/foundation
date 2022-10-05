@@ -1,6 +1,7 @@
 [versions]
 androidGradlePlugin = "7.2.2"
 
+androidDesugarJdkLibs = "1.1.6"
 androidxFragment = "1.5.0"
 firebase = "30.5.0"
 kotlin = "1.7.10"
@@ -14,6 +15,7 @@ android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", ver
 google-firebase-crashlytics-gradlePlugin = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version = "2.9.2" }
 jetbrains-kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
 androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidxFragment" }
 google-firebase = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase" }
 jetbrains-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
