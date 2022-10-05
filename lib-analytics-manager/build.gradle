@@ -1,0 +1,11 @@
+apply from: "$rootDir/gradle/lib-android-module.gradle"
+
+dependencies {
+    implementation projects.coreLoggr
+    implementation projects.coreAnalytics
+
+    implementation libs.jetbrains.coroutines.android
+    implementation platform(libs.google.firebase)
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+}
