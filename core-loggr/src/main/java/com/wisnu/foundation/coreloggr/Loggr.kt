@@ -1,4 +1,4 @@
-package com.wisnu.foundation.corelogger
+package com.wisnu.foundation.coreloggr
 
 import android.util.Log
 
