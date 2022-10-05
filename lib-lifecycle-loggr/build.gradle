@@ -1,0 +1,7 @@
+apply from: "$rootDir/gradle/lib-android-module.gradle"
+
+dependencies {
+    implementation projects.coreLoggr
+
+    implementation libs.androidx.fragment.ktx
+}
