@@ -2,6 +2,12 @@
 
 I copy this code into all apps I make. I'm tired of doing it. Now it's a library.
 
+### Real sample
+- https://github.com/wisnukurniawan/Compose-ToDo
+- https://github.com/wisnukurniawan/Compose-Expense
+- https://github.com/wisnukurniawan/analytics-debugview
+- https://github.com/wisnukurniawan/siksorogo 
+
 ### Integration
 
 ```groovy
