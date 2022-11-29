@@ -40,6 +40,11 @@ fun LocalDateTime.formatDateSecond(): String {
     return format(pattern)
 }
 
+fun LocalDateTime.formatDateMinute(): String {
+    val pattern = "HH:mm"
+    return format(pattern)
+}
+
 fun LocalDateTime.formatDateTime(): String {
     val pattern = "EEE, dd MMM yyyy"
     return format(pattern)
