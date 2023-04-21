@@ -60,24 +60,21 @@ fun LocalDateTime.formatMonth(): String {
     return format(pattern)
 }
 
-fun LocalDateTime.format(pattern: String): String {
-    val zoneId = ZoneId.systemDefault()
+fun LocalDateTime.format(pattern: String, zoneId: ZoneId = ZoneId.systemDefault()): String {
     val locale = Locale.getDefault()
 
     return SimpleDateFormat(pattern, locale).format(atZone(zoneId).toInstant().toEpochMilli())
 }
 
-fun LocalDateTime.toMillis(): Long {
-    val zoneId = ZoneId.systemDefault()
+fun LocalDateTime.toMillis(zoneId: ZoneId = ZoneId.systemDefault()): Long {
     return atZone(zoneId).toInstant().toEpochMilli()
 }
 
-fun LocalDate.toMillis(zone: ZoneId = ZoneId.systemDefault()): Long {
-    return atStartOfDay(zone).toInstant().toEpochMilli()
+fun LocalDate.toMillis(zoneId: ZoneId = ZoneId.systemDefault()): Long {
+    return atStartOfDay(zoneId).toInstant().toEpochMilli()
 }
 
-fun Long.toLocalDateTime(): LocalDateTime {
-    val zoneId = ZoneId.systemDefault()
+fun Long.toLocalDateTime(zoneId: ZoneId = ZoneId.systemDefault()): LocalDateTime {
     return LocalDateTime.ofInstant(Instant.ofEpochMilli(this), zoneId)
 }
 
